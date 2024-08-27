@@ -6,8 +6,6 @@ let mistakeTag = document.querySelector(".mistake span");
 let wpmTag = document.querySelector(".wpm span");
 let cpmTag = document.querySelector(".cpm span");
 
-console.log(cpmTag);
-
 let timer;
 let maxTime = 60;
 let timeLeft = maxTime;
@@ -60,7 +58,6 @@ function initTyping() {
 
         wpmTag.innerText = wpm;
         mistakeTag.innerText = mistakes;
-        console.log(cpmTag);
         cpmTag.innerText = charIndex - mistakes;
     } else {
         clearInterval(timer);
